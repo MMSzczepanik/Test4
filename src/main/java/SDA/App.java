@@ -8,6 +8,15 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( );
+
+        FIrm firm = new FIrm();
+        firm.addEmploye(new Employe("Michał", "Szczepanik"));
+        firm.addEmploye(new Employe("Maciek", "Szczepanik"));
+        firm.addEmploye(new Employe("Mariusz", "Szczepanik"));
+        firm.addEmploye(new Employe("Mike", "Szczepanik"));
+        firm.addEmploye(new Employe("Muuuu", "Szczepanik"));
+
+        System.out.println(firm.getEmployeById(464));
+
     }
 }
